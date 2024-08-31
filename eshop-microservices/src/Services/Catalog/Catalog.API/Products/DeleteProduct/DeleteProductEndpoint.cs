@@ -18,8 +18,8 @@ namespace Catalog.API.Products.DeleteProduct
             })
             .WithName("DeleteProduct")
             .Produces<DeleteProductResponse>(StatusCodes.Status200OK)
-            .ProducesValidationProblem(StatusCodes.Status400BadRequest)
-            .ProducesValidationProblem(StatusCodes.Status404NotFound)
+            .ProducesProblem(StatusCodes.Status400BadRequest)
+            .ProducesProblem(StatusCodes.Status404NotFound)
             .WithSummary("Delete Product")
             .WithDescription("Delete Product");
         }
