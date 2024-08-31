@@ -20,4 +20,8 @@
     <ProjectReference Include="..\..\..\BuildingBlock\BuildingBlocks\BuildingBlocks.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Products\NewFolder\" />
+  </ItemGroup>
+
 </Project>
